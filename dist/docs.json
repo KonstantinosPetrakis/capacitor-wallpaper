@@ -1,0 +1,62 @@
+{
+  "api": {
+    "name": "WallpaperPlugin",
+    "slug": "wallpaperplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "setWallpaper",
+        "signature": "(options: WallpaperOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "the options containing the image details.",
+            "type": "WallpaperOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "param",
+            "text": "options the options containing the image details."
+          }
+        ],
+        "docs": "Sets the device wallpaper to a specific image.",
+        "complexTypes": [
+          "WallpaperOptions"
+        ],
+        "slug": "setwallpaper"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "WallpaperOptions",
+      "slug": "wallpaperoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "base64",
+          "tags": [],
+          "docs": "The base64 data of the image.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "In which parts the wallpaper will be set.",
+          "complexTypes": [],
+          "type": "'home' | 'lock' | 'both'"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
