@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
+import type { WallpaperPlugin, WallpaperOptions } from './definitions';
 
-import type { WallpaperPlugin } from './definitions';
 
 export class WallpaperWeb extends WebPlugin implements WallpaperPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
+    async setWallpaper(options: WallpaperOptions): Promise<void> {
+        console.log(options);
+        throw new Error("This plugin doesn't support the browser.");
+    }
 }

@@ -13,25 +13,37 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`setWallpaper(...)`](#setwallpaper)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### setWallpaper(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+setWallpaper(options: WallpaperOptions) => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+Sets the device wallpaper to a specific image.
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+| Param         | Type                                                          | Description                               |
+| ------------- | ------------------------------------------------------------- | ----------------------------------------- |
+| **`options`** | <code><a href="#wallpaperoptions">WallpaperOptions</a></code> | the options containing the image details. |
 
 --------------------
+
+
+### Interfaces
+
+
+#### WallpaperOptions
+
+| Prop         | Type                                    | Description                               |
+| ------------ | --------------------------------------- | ----------------------------------------- |
+| **`base64`** | <code>string</code>                     | The base64 data of the image.             |
+| **`type`**   | <code>'home' \| 'lock' \| 'both'</code> | In which parts the wallpaper will be set. |
 
 </docgen-api>
