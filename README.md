@@ -1,11 +1,11 @@
 # wallpaper
 
-A plugin for setting base64 images as wallpapers in android devices.
+A capacitor plugin for setting base64 images as wallpapers in android devices.
 
 ## Install
 
 ```bash
-npm install wallpaper
+npm install wallpaper (not published but can be installed locally.)
 npx cap sync
 ```
 

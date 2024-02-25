@@ -1,7 +1,7 @@
 {
   "name": "wallpaper",
   "version": "0.0.1",
-  "description": "A plugin for setting base64 images as wallpapers in android devices.",
+  "description": "A capacitor plugin for setting base64 images as wallpapers in android devices.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
